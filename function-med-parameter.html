@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Krigerprofiler</title>
-		<!--
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Krigerprofiler</title>
+	<!--
         En parameter er en variabel i parantesen til en funksjon som venter å bli satt med verdi ved kall på funkjonen.
         Gjør at man får mye mer gjenbrukbar kode.
         Mal: 
@@ -12,36 +13,42 @@
             // bruk av parameterne
         }
     -->
-	</head>
-	<body>
-		<h1>Krigerprofiler</h1>
+</head>
 
-		<input id="show-anna-btn" type="button" value="Vis Anna" />
-		<input id="show-bjornar-btn" type="button" value="Vis Bjørnar" />
-		<input id="show-all-btn" type="button" value="Vis alle" />
+<body>
+	<h1>Krigerprofiler</h1>
 
-		<div id="output-div"></div>
+	<input id="show-anna-btn" type="button" value="Vis Anna" />
+	<input id="show-bjornar-btn" type="button" value="Vis Bjørnar" />
+	<input id="show-all-btn" type="button" value="Vis alle" />
 
-		<script>
-			/*
-            HTML-elementer
-        */
-			var showAnnaBtn = document.getElementById("show-anna-btn");
-			var showBjornarBtn = document.getElementById("show-bjornar-btn");
-			var showAllBtn = document.getElementById("show-all-btn");
-			var outputDiv = document.getElementById("output-div");
+	<div id="output-div"></div>
 
-			/*
-            Variabler/arrays
-        */
+	<script>
+		/*
+		HTML-elementer
+		*/
+		var showAnnaBtn = document.getElementById("show-anna-btn");
+		var showBjornarBtn = document.getElementById("show-bjornar-btn");
+		var showAllBtn = document.getElementById("show-all-btn");
+		var outputDiv = document.getElementById("output-div");
 
-			/* 
-            Funksjoner
-        */
+		/*
+		Variabler/arrays
+		*/
 
-			/*
-            Events
-        */
-		</script>
-	</body>
+		/* 
+		Funksjoner
+		*/
+		function showAnna() {
+			alert("anna");
+		}
+
+		/*
+		Events
+		*/
+		showAnnaBtn.onmouseenter = showAnna;
+	</script>
+</body>
+
 </html>
