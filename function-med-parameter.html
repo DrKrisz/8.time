@@ -49,19 +49,37 @@
 			/* 
 			Funksjoner
 			*/
-			function showAnna() {
+			function showWarrior(name, images, abilities) {
 				outputDiv.innerHTML = `
-					<h3>Anna</h3>
-					<img src="images/anna.jpg" alt="Anna">
-					<p>Anna er rask og sterk og smart.</p>
+					<h3>${name}</h3>
+					<img src="images/${images}" alt="${name}">
+					<p style="width: 200px;">${abilities}</p>
 
 				`;
+			}
+			function clearInfo() {
+				outputDiv.innerHTML = "";
 			}
 
 			/*
 			Events
 			*/
-			showAnnaBtn.onmouseenter = showAnna;
+			showAnnaBtn.onmouseenter = function () {
+				showWarrior(
+					"Anna",
+					"Anna.jpg",
+					"Anna is a remarkable individual with a multitude of talents and a vibrant personality that leaves a lasting impression on all who have the privilege of knowing her. Her journey through life has been marked by resilience and a relentless pursuit of her dreams.",
+				);
+			};
+			showBjornarBtn.onmouseenter = function () {
+				showWarrior(
+					"Bjornar",
+					"Bjornar.jpg",
+					"Bjorner is a formidable warrior whose presence on the battlefield commands respect and awe. With a towering stature and a physique honed by relentless training, he embodies the archetype of a fearless and battle-hardened fighter. His journey into the world of combat began as a young, determined aspirant, and over the years, he has evolved into a seasoned and skilled warrior.",
+				);
+			};
+			showAnnaBtn.onmouseleave = clearInfo;
+			showBjornarBtn.onmouseleave = clearInfo;
 		</script>
 	</body>
 </html>
