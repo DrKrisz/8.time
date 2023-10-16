@@ -26,17 +26,17 @@
             var bodyStyle = document.getElementById("body");
 
 			/* Funksjon for å vise alt */
-			function showText(text, hmtlObject) {
+			function showText(text, hmtlObject, color) {
 				hmtlObject.innerHTML = text
-				hmtlObject.style.color = "rgb(150, 150, 150)";
+				hmtlObject.style.color = color;
 				hmtlObject.style.fontFamily = "sans-serif";
 				hmtlObject.style.textAlign = "center";
                 bodyStyle.style.backgroundColor = "black"; //body backgorund color black
 			}
 
-			showText("Filmer og serier", pageTitle);
-			showText("isd sajuhd oisah disah dishoal", pageDescription);
-			showText("isd sajuhd oisah disah dishoal", outputDiv);
+			showText("Filmer og serier", pageTitle, "rgb(150, 0, 0)");
+			showText("isd sajuhd oisah disah dishoal", pageDescription, "rgb(150, 150, 150)");
+			showText("isd sajuhd oisah disah dishoal", outputDiv, "rgb(150, 150, 150)");
 		</script>
 	</body>
 </html>
