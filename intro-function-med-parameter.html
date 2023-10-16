@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Filmer og serier</title>
+		<!--
+        En parameter er en variabel i parantesen til en funksjon som venter å bli satt med verdi ved kall på funkjonen.
+        Gjør at man får mye mer gjenbrukbar kode.
+        Mal: 
+        function funksjonsNavn(parameter1, parameter2, osv.){ 
+            // bruk av parameterne
+        }
+    -->
+	</head>
+	<body id="body">
+		<h1 id="page-title"></h1>
+		<p id="page-description"></p>
+		<div id="output-div"></div>
+
+		<script>
+			var pageTitle = document.getElementById("page-title");
+			var pageDescription = document.getElementById("page-description");
+			var outputDiv = document.getElementById("output-div");
+
+            var bodyStyle = document.getElementById("body");
+
+			/* Funksjon for å vise alt */
+			function showText() {
+				pageTitle.innerHTML = "Filmer og serier";
+				pageTitle.style.color = "rgb(150, 0, 0)";
+				pageTitle.style.fontFamily = "sans-serif";
+				pageTitle.style.textAlign = "center";
+                bodyStyle.style.backgroundColor = "black"; //body backgorund color black
+			}
+
+			showText();
+		</script>
+	</body>
+</html>
