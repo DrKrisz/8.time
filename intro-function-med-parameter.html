@@ -26,17 +26,17 @@
             var bodyStyle = document.getElementById("body");
 
 			/* Funksjon for å vise alt */
-			function showText(text) {
-				pageTitle.innerHTML = text;
-				pageTitle.style.color = "rgb(150, 0, 0)";
-				pageTitle.style.fontFamily = "sans-serif";
-				pageTitle.style.textAlign = "center";
+			function showText(text, hmtlObject) {
+				hmtlObject.innerHTML = text
+				hmtlObject.style.color = "rgb(150, 150, 150)";
+				hmtlObject.style.fontFamily = "sans-serif";
+				hmtlObject.style.textAlign = "center";
                 bodyStyle.style.backgroundColor = "black"; //body backgorund color black
-
-				console.log("Succesfull showText function");
 			}
 
-			showText("Filmer og serier");
+			showText("Filmer og serier", pageTitle);
+			showText("isd sajuhd oisah disah dishoal", pageDescription);
+			showText("isd sajuhd oisah disah dishoal", outputDiv);
 		</script>
 	</body>
 </html>
