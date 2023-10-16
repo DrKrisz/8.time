@@ -26,15 +26,17 @@
             var bodyStyle = document.getElementById("body");
 
 			/* Funksjon for å vise alt */
-			function showText() {
-				pageTitle.innerHTML = "Filmer og serier";
+			function showText(text) {
+				pageTitle.innerHTML = text;
 				pageTitle.style.color = "rgb(150, 0, 0)";
 				pageTitle.style.fontFamily = "sans-serif";
 				pageTitle.style.textAlign = "center";
                 bodyStyle.style.backgroundColor = "black"; //body backgorund color black
+
+				console.log("Succesfull showText function");
 			}
 
-			showText();
+			showText("Filmer og serier");
 		</script>
 	</body>
 </html>
